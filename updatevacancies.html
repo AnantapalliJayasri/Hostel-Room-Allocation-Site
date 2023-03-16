@@ -1,0 +1,60 @@
+<html>
+<head>
+   <style>
+      .d3{
+		margin-top: 200px;
+		margin-left : 400px;
+		margin-right : 400px;
+		font-size:15px;
+	   }
+	   #b1{
+		margin-left : 250px;
+		font-size:15px;
+		
+	   }
+	   .a1{
+	    background-image:url("https://ridenow.sg/wp-content/uploads/2017/10/professional-images-for-website-background-13.jpg");
+		 background-repeat:no-repeat;
+		 background-size:1400px 750px;
+		}
+   </style>
+</head>
+<body class="a1">
+
+    <table border="1px solid" class="d3" cellpadding="20">
+        <tr>
+            <td>
+                <b>
+                    <form class="d2" onsubmit="return check()" action="updatevacancies.php" method="POST">
+
+						AdmissionNo: &nbsp;&nbsp;<input
+                            type="text" placeholder="Enter AdmissionNo" name="adno" id="name"> <br><br>
+						<label>Hostel Name:</label>&nbsp;&nbsp;
+						<select name="hstlname">
+									 <option value = "medha"> medha </option> 
+									  <option value = "nirmala"> nirmala </option> 
+									   <option value = "varanasi"> varanasi </option> 
+										<option value = "padmavathi"> padmavathi </option> 
+										 <option value = "sita"> sita </option> 
+										  <option value = "manasa"> manasa</option> 
+										   <option value = "rajeswari"> rajeswari </option> 
+											<option value = "madhavi"> madhavi </option> 
+										 
+                        </select><br><br>
+					    RoomNo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                            type="text" placeholder="Enter roomno" name="rno" id="name"> <br><br>
+						<label>BedNo:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select name="bedno">
+                                 <option value = "FirstBed"> FirstBed </option> 
+								  <option value = "MiddleBed"> MiddleBed </option> 
+								   <option value = "LastBed"> LastBed </option> 
+                        </select><br><br>
+                        
+                        <input id="b1" type="submit" value="Submit">
+                    </form>
+                </b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

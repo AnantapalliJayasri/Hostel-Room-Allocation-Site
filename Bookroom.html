@@ -1,0 +1,71 @@
+<html>
+<head>
+  <style>
+      .d3{
+		margin-top: 150px;
+		margin-left : 400px;
+		margin-right : 400px;
+		font-size:15px;
+	   }
+	   #b1{
+		margin-left : 200px;
+		font-size:15px;
+		
+	   }
+	   .d1{
+		margin-left : 380px;
+		color : black;
+		font-size: 40px;
+		margin-right : 400px;
+	  }
+	  .a1{
+	     background-image:url("https://ridenow.sg/wp-content/uploads/2017/10/professional-images-for-website-background-13.jpg");
+		 background-repeat:no-repeat;
+		 background-size:1400px 750px;
+	     
+	  }
+   </style>
+</head>
+<body class="a1">
+<h1 class="d1">Room Booking Form</h1>
+    <table border="1px solid" class="d3" cellpadding="15">
+        <tr>
+            <td>
+                <b>
+                    <form class="d2" onsubmit="return check()" action="Bookroom.php" method="POST">
+
+                        AdmissionNo: &nbsp; <input
+                            type="text" placeholder="Enter AdmissionNo" name="adno" id="name"> <br><br>
+						Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input
+                            type="text" placeholder="Enter UserName" name="name" id="name"> <br><br>
+						PhoneNumber:  <input
+                            type="text" placeholder="Enter PhoneNumber" name="phno" id="name"> <br><br>
+						<label>Hostel Name:</label>&nbsp;&nbsp;&nbsp;
+						<select name="hstlname">
+                                 <option value = "medha"> medha </option> 
+								  <option value = "nirmala"> nirmala </option> 
+								   <option value = "varanasi"> varanasi </option> 
+								    <option value = "padmavathi"> padmavathi </option> 
+									 <option value = "sita"> sita </option> 
+									  <option value = "manasa"> manasa</option> 
+									   <option value = "rajeswari"> rajeswari </option> 
+									    <option value = "madhavi"> madhavi </option> 
+										 
+                        </select><br><br>
+					    RoomNumber:  <input
+                            type="text" placeholder="Enter RoomNumber" name="rno" id="name"> <br><br>
+						<label>Bed No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select name="bedno">
+                                 <option value = "FirstBed"> FirstBed </option> 
+								  <option value = "MiddleBed"> MiddleBed </option> 
+								   <option value = "LastBed"> LastBed </option> 
+                        </select><br><br>
+                        
+                        <input id="b1" type="submit" value="Submit">
+                    </form>
+                </b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
